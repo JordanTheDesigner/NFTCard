@@ -1,0 +1,176 @@
+body{
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Outfit', sans-serif;
+}
+
+h1{
+  font-size:22px;
+  color: white;
+  margin-top:0px;
+  font-weight: 400;
+}
+
+h2{
+color:hsl(215, 51%, 70%);
+font-size:16px;
+font-weight: 300;
+}
+
+p{
+  color:hsl(215, 51%, 70%);
+  font-size:16px;
+  margin-top: 0px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+a{
+  color:#fff;
+  text-decoration: none;
+}
+
+a:hover{
+  color:hsl(178, 100%, 50%);
+}
+
+hr{
+  border:none;
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+  width:100%;
+}
+
+/**ContentContainer**/
+#ContentContainer{
+  background-color: hsl(216, 50%, 16%);
+  width:325px;
+  border-radius: 20px;
+}
+
+/**Image Section**/
+
+#NFTImage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding:20px;
+}
+
+#NFTImage #CardImage{
+  width:280px;
+  height: 290px;
+  position: relative;
+  border-radius: 30px;
+  background-image: url('images/image-equilibrium.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+/**Image Overlay Section**/
+#CardImage:hover{
+  cursor: pointer;
+}
+
+#OverlayImage{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: hsl(178, 100%, 50%);
+}
+
+img#OverlayIcon{
+  width:45px;
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+
+}
+
+#NFTImage:hover #OverlayImage {
+  opacity: .5;
+}
+
+#NFTImage:hover img#OverlayIcon {
+  opacity: 1;
+}
+
+/** Content Text Section **/
+
+#ContentText{
+  padding:0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#ContentText #PricingInfo,
+#ContentText #CreatorCredit{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/** Pricing Section **/
+
+#PricingInfo img{
+  width:18px;
+  height: 16px;
+}
+
+#PricingInfo img:first-child{
+  width: 10px;
+  height: 20px;
+}
+
+h2.price{
+  flex:1;
+  font-weight:700;
+  color:hsl(178, 100%, 50%);
+}
+
+/*Creator Section**/
+
+#CreatorCredit{
+  padding:10px 0 15px;
+}
+
+#CreatorCredit img{
+  width:30px;
+  height: 34px;
+}
+
+#CreatorCredit span{
+  color:white;
+}
+
+#CreatorCredit h2{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#CreatorCredit img,#PricingInfo img{
+  padding-right: 6px;
+}
+
+#CreatorCredit #CreatorImage{
+  padding-right: 15px;
+}
+
+#CreatorCredit img{
+ border-radius: 50%;
+ border: 1px solid #fff;
+}
